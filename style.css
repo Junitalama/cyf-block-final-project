@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body{ 
+  font-family:Roboto;
+  color:white;
+  background-color:#91C2C1;
+  width:100%;
+  line-height:1.4;
+  
+}
+header{
+  width:100%;
+   display:flex;
+  justify-content:space-between;
+  align-items:center;
+   background-color:pink;
+  
+  
+}
+h1{
+  color:maroon;}
+h2{color:maroon;}
+
+h3{color:maroon;}
+
+footer{background-color:orange;
+color:green;
+padding:10px;
+text-align:center;}
+
+li{list-style:none;}
