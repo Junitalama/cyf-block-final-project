@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body{ 
   font-family:Roboto;
-  color:white;
+  color:black;
   background-color:#E2EEEE;
   width:100%;
   line-height:1.4;
@@ -17,10 +17,10 @@ header{
   
 }
 h1{
-  color:black;}
-h2{color:black;}
+  color:maroon;}
+h2{color:maroon;}
 
-h3{color:black;}
+h3{color:maroon;}
 
 footer{background-color:orange;
 color:green;
