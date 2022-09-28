@@ -2,7 +2,7 @@
 body{ 
   font-family:Roboto;
   color:white;
-  background-color:#91C2C1;
+  background-color:#E2EEEE;
   width:100%;
   line-height:1.4;
   
@@ -27,4 +27,6 @@ color:green;
 padding:10px;
 text-align:center;}
 
-li{list-style:none;}
+
+li{list-style:none;
+display:flex;}
