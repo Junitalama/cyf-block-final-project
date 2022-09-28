@@ -48,32 +48,32 @@ document.getElementById('next').addEventListener('click', (event) => {
 });
 
 document.getElementById('add-product1').addEventListener('click', (event) => {
-  addproductToshoppingcart('babygirl set £7.50');
+  addproductToshoppingcart('babygirl set =£7.50');
 
 });
 
 document.getElementById('add-product2').addEventListener('click', (event) => {
-  addproductToshoppingcart('wool blend coat £10.50');
+  addproductToshoppingcart('wool blend coat =£10.50');
 
 });
 
 document.getElementById('add-product3').addEventListener('click', (event) => {
-  addproductToshoppingcart('overall sets £11.50');
+  addproductToshoppingcart('overall sets =£11.50');
 
 });
 
 document.getElementById('add-product4').addEventListener('click', (event) => {
-  addproductToshoppingcart('cherry print dress £12.50');
+  addproductToshoppingcart('cherry print dress =£12.50');
 
 });
 
 document.getElementById('add-product5').addEventListener('click', (event) => {
-  addproductToshoppingcart('sweetshirt £10');
+  addproductToshoppingcart('sweetshirt =£10');
 
 });
 
 document.getElementById('add-product6').addEventListener('click', (event) => {
-  addproductToshoppingcart('fleece line coat £15');
+  addproductToshoppingcart('fleece line coat =£15');
 
 });
 
