@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-body{ 
-  font-family:Roboto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');body{ 
+  font-family:Poppins;
   color:black;
   background-color:#E2EEEE;
   width:100%;
@@ -28,5 +27,5 @@ padding:10px;
 text-align:center;}
 
 
-li{list-style:none;
-display:flex;}
+li{list-style:none;}
+div{display:flex;}
