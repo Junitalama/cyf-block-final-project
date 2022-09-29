@@ -3,16 +3,43 @@
   Reading tests will always help you discover your requirements.
   You can make this window bigger. 
    ===================
-*/var parameter, images;
+*/var Productname, productprice, subtotal, images;
 
 // Describe this function...
-function addproductToshoppingcart(parameter) {
+function addproductToshoppingcart(Productname, productprice) {
   if(--window.LoopTrap <= 0) throw "Infinite loop.";
   let element_shopping_cart = document.getElementById('shopping-cart');
   let new_li = document.createElement('li');
-  new_li.innerText = parameter;
+  let new_span = document.createElement('span');
+  new_span.innerText = Productname;
+
+  new_li.appendChild(new_span);
+  let new_span2 = document.createElement('span');
+  new_span2.innerText = 'price £';
+
+  new_li.appendChild(new_span2);
+  let new_span3 = document.createElement('span');
+  new_span3.innerText = productprice;
+
+  new_li.appendChild(new_span3);
 
   element_shopping_cart.appendChild(new_li);
+  subtotal.push(productprice);
+}
+
+// Describe this function...
+function updatetotalcost2() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_total_amount = document.getElementById('total-amount');
+  element_total_amount.replaceChildren();
+  let new_span4 = document.createElement('span');
+  new_span4.innerText = '£';
+
+  element_total_amount.appendChild(new_span4);
+  let new_span5 = document.createElement('span');
+  new_span5.innerText = subtotal.reduce((a,b) => a+b, 0);
+
+  element_total_amount.appendChild(new_span5);
 }
 
 function getNumberOrString(value) {
@@ -46,42 +73,53 @@ document.getElementById('next').addEventListener('click', (event) => {
   element_pics3.setAttribute("src", images.shift());
 
 });
+subtotal = [];
+updatetotalcost2();
+
+subtotal;
+
 
 document.getElementById('add-product1').addEventListener('click', (event) => {
-  addproductToshoppingcart('babygirl set =£7.50');
+  addproductToshoppingcart('babygirl set', 7.5);
+  updatetotalcost2();
 
 });
 
 document.getElementById('add-product2').addEventListener('click', (event) => {
-  addproductToshoppingcart('wool blend coat =£10.50');
+  addproductToshoppingcart('wool blend coat ', 10.5);
+  updatetotalcost2();
 
 });
 
 document.getElementById('add-product3').addEventListener('click', (event) => {
-  addproductToshoppingcart('overall sets =£11.50');
+  addproductToshoppingcart('overall sets', 11.5);
+  updatetotalcost2();
 
 });
 
 document.getElementById('add-product4').addEventListener('click', (event) => {
-  addproductToshoppingcart('cherry print dress =£12.50');
+  addproductToshoppingcart('cherry print dress', 12.5);
+  updatetotalcost2();
 
 });
 
 document.getElementById('add-product5').addEventListener('click', (event) => {
-  addproductToshoppingcart('sweetshirt =£10');
+  addproductToshoppingcart('sweetshirt', 10);
+  updatetotalcost2();
 
 });
 
 document.getElementById('add-product6').addEventListener('click', (event) => {
-  addproductToshoppingcart('fleece line coat =£15');
+  addproductToshoppingcart('fleece line coat', 15);
+  updatetotalcost2();
 
 });
 
 document.getElementById('add-feedback').addEventListener('click', (event) => {
   let element_feedback = document.getElementById('feedback');
-  let new_li2 = document.createElement('li');
-  new_li2.innerText = getNumberOrString(document.getElementById('input-feedback').value);
+  let new_ul = document.createElement('ul');
+  new_ul.innerText = getNumberOrString(document.getElementById('input-feedback').value);
 
-  element_feedback.appendChild(new_li2);
+  element_feedback.appendChild(new_ul);
 
 });
