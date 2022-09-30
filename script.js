@@ -123,3 +123,13 @@ document.getElementById('add-feedback').addEventListener('click', (event) => {
   element_feedback.appendChild(new_ul);
 
 });
+let element_list = document.getElementById('list');
+let new_ul = document.createElement('ul');
+let new_a = document.createElement('a');
+new_a.setAttribute("href", 'https://tinyurl.com/2dvm9c2x');
+new_a.innerText = 'SHARE';
+
+new_ul.appendChild(new_a);
+
+element_list.appendChild(new_ul);
+
